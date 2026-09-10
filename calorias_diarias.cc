@@ -7,6 +7,8 @@ struct Calorias
 // Declaracion de funciones
 void ConsultarCalorias(float calorias);
 void AgregarCalorias(int &calorias, int cant);
+void QuemarCal(int *calorias, int cal);
+
 int main()
 {
     return 0;
@@ -20,4 +22,8 @@ void ConsultarCalorias(float calorias)
 void AgregarCalorias(int &calorias, int cant)
 {
     calorias += cant;
+}
+void QuemarCal(int *calorias, int cal)
+{
+    *calorias -= cal;
 }
